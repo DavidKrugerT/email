@@ -22,12 +22,14 @@ public:
 	friend CompDateWhoSubject;
 	friend CompWhoDateSubject;
 	friend CompSubjectWhoDate;
-
+	2
 };
 
 struct CompWhoDateSubject
 {
+	bool operator()(const Email& lhs, const Email& rhs) {
 
+	};
 };
 
 struct CompDateWhoSubject
