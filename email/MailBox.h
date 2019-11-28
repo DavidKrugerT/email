@@ -4,8 +4,11 @@
 
 class MailBox
 {
+
 	std::vector<Email> emails;
+
 public:
+
 	MailBox(std::vector<Email> rhs);
 	~MailBox();
 	void SortWho();

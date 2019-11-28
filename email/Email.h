@@ -6,7 +6,6 @@
 #include <vector>
 #include <ostream>
 
-
 class Email
 {
 
@@ -23,11 +22,9 @@ public:
 	std::string getSubject() const;
 	friend std::ostream& operator<<(std::ostream& os, Email &rhs);
 
-	//friend functions as structs. They want to return a bool value.
 	friend struct CompDateWhoSubject;
 	friend struct CompWhoDateSubject;
 	friend struct CompSubjectWhoDate;
-	
 };
 
 struct CompWhoDateSubject
@@ -73,16 +70,6 @@ struct CompSubjectWhoDate
 		return lhs.date < rhs.date;
 	};
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif // EMAIL_H
 

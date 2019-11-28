@@ -2,7 +2,6 @@
 
 MailBox::MailBox(std::vector<Email> rhs) : emails(rhs)
 {
-
 }
 
 MailBox::~MailBox()
