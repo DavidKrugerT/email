@@ -25,4 +25,8 @@ std::string Email::getSubject() const
 	return subject;
 }
 
-
+std::ostream& operator<<(std::ostream & os, Email & rhs)
+{
+	os << rhs.getName() << rhs.getDate() << rhs.getSubject() << '\n';
+	return os;
+}

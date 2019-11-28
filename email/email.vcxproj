@@ -116,9 +116,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Email.h" />
+    <ClInclude Include="MailBox.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Email.cpp" />
+    <ClCompile Include="MailBox.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
